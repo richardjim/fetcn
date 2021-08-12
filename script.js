@@ -7,16 +7,20 @@ $(document).ready(() => {
 });
 
 function getPicture(searchText) {
-  axios.get("https://pixabay.com/api/?key=22894566-4e17b23e8144e49c421bbf7f0&q" + searchText)
+  axios
+    .get(
+      "https://pixabay.com/api/?key=22894566-4e17b23e8144e49c421bbf7f0&q=" +
+        searchText
+    )
     .then((response) => {
       console.log(response);
-      let images = response.data.Search;
+      let images = response.data.hits;
       let output = "";
-      $.each(images, (index, pics) => {
+      $.each(images, (index,pics ) => {
         output += `
         <div class= "col-md-3">
-        <div class= "text-center">
-        <img src="${pics.} />
+        <div class= "text-center" >
+        <img src="${pics.userImageURL}" />  
         </div>
         
         </div>
