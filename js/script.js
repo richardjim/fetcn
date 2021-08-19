@@ -23,8 +23,7 @@ function getPicture(searchText) {
         <img src="${pics.userImageURL}" />  
         </div>
         
-        </div>
-        
+        </div>        
         `;
       });
 
@@ -34,4 +33,18 @@ function getPicture(searchText) {
     .catch(function (error) {
       console.log(error);
     });
+}
+
+
+
+const responsive = document.querySelector(".responsive");
+const pictures = document.querySelector ("#pictures");
+let result = "responsive" + "pictures";
+
+if ( pictures.style.display="none"){
+ responsive.style.display="flex: ";
+  
+} 
+else {
+  responsive.style.display="none";
 }

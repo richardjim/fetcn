@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <title>fet</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-default navbar-light">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="/html/index.html" class="navbar-brand">Pixabay</a>
+      </div>
+      <ul class="navbar-nav">
+        <li><a class="nav-link" href="#">Photos</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Illustrations</a>
+        </li>
+        <li><a class="nav-link" href="#">Vectors</a></li>
+        <li><a class="nav-link" href="#">Videos</a></li>
+        <li><a class="nav-link" href="#">Music</a></li>
+      </ul>
+      <ul class="navbar-nav navbar-right">
+        <li>
+          <div class="dropdown">
+            <button id="navbtn" type="button" class="btn btn-light" data-toggle="dropdown">
+              Explore <i class="fal fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-menu">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Media</th>
+                    <th>Community</th>
+                    <th>About</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Editor's Choice</td>
+                    <td>Blog</td>
+                    <td>FAQ</td>
+                  </tr>
+                  <tr>
+                    <td>Popular Images</td>
+                    <td>Forum</td>
+                    <td>Terms</td>
+                  </tr>
+                  <tr>
+                    <td>Popular Videos</td>
+                    <td>Artist</td>
+                    <td>Privacy</td>
+                  </tr>
+                  <tr>
+                    <td>Popular Search</td>
+                    <td>Cameras</td>
+                    <td>About Us</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>API</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Languages</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <i class="fab fa-facebook"></i>
+                      <i class="fab fa-twitter"></i>
+                      <i class="fab fa-instagram"></i>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </li>
+        <li><a class="nav-link" href="#">Log In</a></li>
+        <li><a class="nav-link" href="#">Join</a></li>
+        <li>
+          <a class="nav-link" href=""><button class="upbtn">
+              <i class="far fa-inbox-in"> Upload </i>
+            </button></a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <section class="section">
+    <div class="container ">
+      <div class="jumbotron " id="cover">
+        <h2 class="text-center mt-5 text-white">Stunning free images & royalty free stock</h2>
+        <p class="text-center text-white">
+          Over 2.3 million+ high quality stock images, videos and music shared
+          by our talented community.
+        </p>
+
+        <form id="searchForm">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> <button class="btn btn" type="submit"><i
+                    class="fa fa-search"></i></button></span>
+            </div>
+            <input type="text" class="form-control input-lg" name="" id="searchText"
+              placeholder="Search images,videos,vectors and music" />
+            <div class="input-group-append badge-danger">
+
+              <span class="input-group-text">
+                <div class="bxt">
+                  <select class="form-control">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </div>
+                </select>
+              </span>
+            </div>
+        </form>
+      </div>
+      <p class="text-center">
+        Popular Images: nature, wallpaper, background, food, cat, sky,
+        beach, love, dog, money, business, flower, coronavirus
+      </p>
+
+    </div>
+    <p class="text-center" id="down">Free image by BlenderTimer</p>
+    </div> 
+  </section>
+  <div class="result bg-white">
+    <div class="container">
+      <div id="pictures" class="row"></div>
+    </div>
+  </div>
+  <aside class="responsive">
+
+    <div class="gallery">
+      <div class="firstone"><img src="/imageF/flowers-2.jpeg" alt=""></div>
+      <div class="hide"><a href="">Red flower</a><a href=""><i class="far fa-thumbs-up">2</i><i
+            class="fas fa-comment">5</i></a></div>
+    </div>
+    </div>
+
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/red-winged-5.jpeg" alt=""></div>
+        <div class="hide"><a href="">Red-winged</a><a href=""><i class="far fa-thumbs-up">9</i><i
+              class="fas fa-comment">11</i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/raspberry-6.jpeg" alt=""></div>
+        <div class="hide"><a href="">Raspberry</a><a href=""><i class="far fa-thumbs-up"></i>2<i
+              class="fas fa-comment">5</i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/flowers27.jpeg" alt=""></div>
+        <div class="hide"><a href="">flower</a><a href=""><i class="far fa-thumbs-up">25</i><i
+              class="fas fa-comment">8</i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/poppies-7.jpeg" alt=""></div>
+        <div class="hide"><a href="">poppies</a><a href=""><i class="far fa-thumbs-up">4</i><i
+              class="fas fa-comment">8</i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/mountains4.jpeg" style="width: 450px; height: 335px;" alt=""></div>
+        <div class="hide"><a href="">grey mountains</a><a href=""><i class="far fa-thumbs-up">4</i><i
+              class="fas fa-comment">5</i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/clouds34.jpeg" alt=""></div>
+        <div class="hide"><a href="">cloudflare</a><a href=""><i class="far fa-thumbs-up">6</i><i
+              class="fas fa-comment">8</i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/pinwheels-8.jpg" alt=""></div>
+        <div class="hide"><a href="">pinwheels</a><a href=""><i class="far fa-thumbs-up">11</i><i
+              class="fas fa-comment">2</i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/mountain20.jpeg" alt=""></div>
+        <div class="hide"><a href="">mountain</a><a href=""><i class="far fa-thumbs-up">23</i><i
+              class="fas fa-comment">11</i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/voip-9.jpeg" alt=""></div>
+        <div class="hide"><a href="">voip</a><a href=""><i class="far fa-thumbs-up"></i><i
+              class="fas fa-comment"></i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/submarine-11.jpeg" alt=""></div>
+        <div class="hide"><a href="">submarine</a><a href=""><i class="far fa-thumbs-up"></i><i
+              class="fas fa-comment"></i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/gioc-village-waterfall-10.jpeg" alt=""></div>
+        <div class="hide"><a href="">gioc-village-waterfall</a><a href=""><i class="far fa-thumbs-up"></i><i
+              class="fas fa-comment"></i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/bride-12.jpeg" alt=""></div>
+        <div class="hide"><a href="">bride</a><a href=""><i class="far fa-thumbs-up"></i><i
+              class="fas fa-comment"></i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/ice13.jpeg" style="width: 325px; height: 330px;" alt=""></div>
+        <div class="hide"><a href="">ice</a><a href=""><i class="far fa-thumbs-up"></i><i
+              class="fas fa-comment"></i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/cat14.jpeg" alt=""></div>
+        <div class="hide"><a href="">cat</a><a href=""><i class="far fa-thumbs-up"></i><i
+              class="fas fa-comment"></i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/covid14.jpeg" alt=""></div>
+        <div class="hide"><a href="">covid</a><a href=""><i class="far fa-thumbs-up"></i><i
+              class="fas fa-comment"></i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/fantasy-17.jpeg" style="width: 280px; height: 340px;" alt=""></div>
+        <div class="hide"><a href="">fantasy</a><a href=""><i class="far fa-thumbs-up"></i><i
+              class="fas fa-comment"></i></a></div>
+      </div>
+    </div>
+    <div class="responsive">
+      <div class="gallery">
+        <div class="firstone"><img src="/imageF/young25.jpeg" alt=""></div>
+        <div class="hide"><a href="">young</a><a href=""><i class="far fa-thumbs-up"></i><i
+              class="fas fa-comment"></i></a></div>
+      </div>
+    </div>
+  </aside>
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
