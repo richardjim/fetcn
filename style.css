@@ -1,0 +1,16 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#pictures{
+    margin-top: 1em;
+    --bs-gutter-x: 1.5rem;
+--bs-gutter-y: 1rem;
+}
+
+.col-md-3{
+    padding-left: 1em;
+    padding-right: 1em;
+}
