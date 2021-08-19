@@ -16,7 +16,7 @@ function getPicture(searchText) {
       console.log(response);
       let images = response.data.hits;
       let output = "";
-      $.each(images, (index,pics ) => {
+      $.each(images, (index, pics) => {
         output += `
         <div class= "col-md-3">
         <div class= "text-center" >
@@ -35,16 +35,12 @@ function getPicture(searchText) {
     });
 }
 
-
-
 const responsive = document.querySelector(".responsive");
-const pictures = document.querySelector ("#pictures");
+const pictures = document.querySelector("#pictures");
 let result = "responsive" + "pictures";
 
-if ( pictures.style.display="none"){
- responsive.style.display="flex: ";
-  
-} 
-else {
-  responsive.style.display="none";
+if ((pictures.style.display = "none")) {
+  responsive.style.display = "flex: ";
+} else {
+  responsive.style.display = "none";
 }
