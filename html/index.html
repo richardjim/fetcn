@@ -20,17 +20,19 @@
   <nav class="navbar navbar-expand-md bg-default navbar-light">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a href="/html/index.html" class="navbar-brand">Pixabay</a>
+        <ul class="navbar-nav" id="nav">
+          <li><a href="/html/index.html" class="navbar-brand">
+              <h4>Pixabay</h4>
+            </a></li>
+          <li><a class="nav-link" href="#">Photos</a></li>
+          <li>
+            <a class="nav-link" href="#">Illustrations</a>
+          </li>
+          <li><a class="nav-link" href="#">Vectors</a></li>
+          <li><a class="nav-link" href="#">Videos</a></li>
+          <li><a class="nav-link" href="#">Music</a></li>
+        </ul>
       </div>
-      <ul class="navbar-nav">
-        <li><a class="nav-link" href="#">Photos</a></li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Illustrations</a>
-        </li>
-        <li><a class="nav-link" href="#">Vectors</a></li>
-        <li><a class="nav-link" href="#">Videos</a></li>
-        <li><a class="nav-link" href="#">Music</a></li>
-      </ul>
       <ul class="navbar-nav navbar-right">
         <li>
           <div class="dropdown">
@@ -104,51 +106,57 @@
   </nav>
 
   <section class="section">
-    <div class="container ">
-      <div class="jumbotron " id="cover">
-        <h2 class="text-center mt-5 text-white">Stunning free images & royalty free stock</h2>
-        <p class="text-center text-white">
-          Over 2.3 million+ high quality stock images, videos and music shared
-          by our talented community.
-        </p>
+    <div class="container">
 
-        <form id="searchForm">
-          <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text"> <button class="btn btn" type="submit"><i
-                    class="fa fa-search"></i></button></span>
-            </div>
-            <input type="text" class="form-control input-lg" name="" id="searchText"
-              placeholder="Search images,videos,vectors and music" />
-            <div class="input-group-append badge-danger">
-
-              <span class="input-group-text">
-                <div class="bxt">
-                  <select class="form-control">
-                    <option selected>Open this select menu</option>
-                    <option value="1">One</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
-                </div>
-                </select>
-              </span>
-            </div>
-        </form>
-      </div>
+      <h2>Stunning free images & royalty free stock</h2>
       <p class="text-center">
+        Over 2.3 million+ high quality stock images, videos and music shared
+        by our talented community.
+      </p>
+
+      <form id="searchForm">
+        <div class="input-group">
+          <div class="input-group-prepend">
+            <span class="barbtn">
+              <button class="btn" id="searchbtn" type="submit"><i class="fa fa-search"></i></button></span>
+
+            <span class="input-group-text " id="input" style="background-color: white">
+
+
+              <input type="text" class="form-control-lg" name="" id="searchText"
+                placeholder="Search images,videos,vectors and music" />
+             <div class="dropmenu">Images   <i class="fal fa-chevron-down"></i></div>
+            </span>
+
+          </div>
+
+          <div class="dropbtn" id="dropbtn">
+            <div class="wrapper">
+              <p class="one">Images</p>
+              <p class="two">Photos</p>
+              <p class="three">Vector graphics</p>
+              <p class="four">Illustrations </p>
+              <p class="five">Videos</p>
+              <p class="six">Music</p>
+              <p class="seven">Search options →</p>
+            </div>
+          </div>
+
+        </div>
+      </form>
+      <p class="text-center" id="boxtext">
         Popular Images: nature, wallpaper, background, food, cat, sky,
         beach, love, dog, money, business, flower, coronavirus
       </p>
-
+      <p class="text-center" id="down">Free image by BlenderTimer</p>
     </div>
-    <p class="text-center" id="down">Free image by BlenderTimer</p>
-    </div> 
   </section>
   <div class="result bg-white">
     <div class="container">
       <div id="pictures" class="row"></div>
     </div>
   </div>
+
   <aside class="responsive">
 
     <div class="gallery">
@@ -279,7 +287,7 @@
     </div>
   </aside>
 
-  
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

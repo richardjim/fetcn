@@ -9,9 +9,7 @@ $(document).ready(() => {
 function getPicture(searchText) {
   axios
     .get(
-      "https://pixabay.com/api/?key=22894566-4e17b23e8144e49c421bbf7f0&q=" +
-        searchText
-    )
+      "https://pixabay.com/api/?key=22894566-4e17b23e8144e49c421bbf7f0&q="+searchText)
     .then((response) => {
       console.log(response);
       let images = response.data.hits;
@@ -20,7 +18,7 @@ function getPicture(searchText) {
         output += `
         <div class= "col-md-3">
         <div class= "text-center" >
-        <img src="${pics.userImageURL}" />  
+        <img src="${pics.imageURL}" />  
         </div>
         
         </div>        
@@ -35,3 +33,9 @@ function getPicture(searchText) {
     });
 }
 
+const dropMenu = document.querySelector('.dropmenu');
+const dropBtnMenu = document.querySelector("#dropbtn");
+
+dropMenu.addEventListener("click", () => {
+  dropBtnMenu.classList.toggle("active");
+});

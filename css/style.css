@@ -10,21 +10,8 @@ body {
   --bs-gutter-y: 1rem;
 }
 
-.col-md-3 {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-.form-select {
-  border: none;
-}
-
-span .btn.active{
-    background-color: honeydew;
-    border: none;
-}
-
 .section {
-  background: url(/imageF/Image.jpeg);
+  background: url(/imageF/imageF.webp);
   background-position: center;
   background-repeat: no-repeat;
   -webkit-background-size: 100% 100%;
@@ -34,9 +21,96 @@ span .btn.active{
   height: 100%;
   width: 100%;
 }
+.container {
+  padding-top: 6rem;
+}
 
+.container h2 {
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 38px;
+  padding-left: 12rem;
+}
+.container p {
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 20px;
+}
+p {
+  font-weight: 100;
+  color: #ffffff;
+  padding-top: 10px;
+  font-size: 17px;
+}
+#input {
+  margin-left: 7em;
+}
+.form-control-lg {
+  width: 680px;
+  border: 0;
+  outline: none;
+  margin-left: 1.5em;
+}
+.barbtn {
+  position: relative;
+  left: 10.5rem;
+  top: 0.8em;
+}
+#searchbtn {
+  border: 0;
+  background-color: white;
+  outline: white;
+}
+
+.barbtn i {
+  color: gray;
+  font-weight: lighter;
+}
+
+.dropbtn {
+  display: none;
+  background-color: black;
+  box-sizing: border-box;
+  width: 15%;
+  position: absolute;
+  left: 48rem;
+  border-radius: 5px;
+  margin-top: 4rem;
+}
+.dropbtn.active {
+  display: flex;
+}
+.wrapper p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  height: 25px;
+}
+
+.dropbtn p:hover {
+  background-color: #80808023;
+  width: 70%;
+  border-width: 50%;
+}
+.dropbtn p {
+  margin-left: 2em;
+  font-size: 14px;
+  margin-top: 8px;
+  padding-top: -3rem;
+  color: slategrey;
+}
+
+.seven {
+  border-top: 0.5px solid gray;
+  width: 70%;
+}
+.dropmenu {
+  font-size: 18px;
+  font-weight: 400;
+}
 #picture {
-    display:flex;
+  display: flex;
   background: white;
 }
 .upbtn {
@@ -73,15 +147,10 @@ span .btn.active{
   flex-direction: row;
   flex-wrap: wrap;
 }
-.firstone {
-}
+
 .firstone:hover + .hide {
   display: flex;
   color: #fff;
-}
-
-#cover {
-  background: url("bg.jpg") no-repeat center center;
 }
 
 div.gallery img {
@@ -98,22 +167,12 @@ div.gallery img {
   flex-wrap: wrap;
 }
 
-.text-center{
-    margin-top: 1rem;
-    padding-left: 5em;
+#boxtext {
+  margin-top: 1rem;
+  padding-left: 1em;
+  font-size: 16px;
 }
-#down{
-    margin-top: 9rem;
-}
-
-@media only screen and (max-width: 700px) {
-  .responsive {
-    width: 49.99999%;
-  }
-}
-
-@media only screen and (max-width: 500px) {
-  .responsive {
-    width: 100%;
-  }
+#down {
+  margin-top: 9rem;
+  font-size: 17px;
 }
